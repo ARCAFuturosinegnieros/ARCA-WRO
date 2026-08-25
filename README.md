@@ -1,4 +1,4 @@
-![image alt](https://github.com/gisoddolfato99-jpg/Robosports/blob/ad2694a118b114337a687732f3f99ac671aa8314/feature/supoer.jpg)
+![image alt](https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/9b341d565939584d5ee5446afa225ad2bcc4d892/fotos/image.png)
 
 <br>
 
