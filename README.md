@@ -20,17 +20,15 @@ El robot autónomo desarrollado para WRO Futuros ingenieros 2026 está construid
   - Dirección: TETRIX Standard-Scale Servo Motor
 - **Sensores:** 
   - Sensor ultrasónico frontal de medición continua de distancia.
-  - 
+  - Cámara ESP-32 CAM integrado con un Microprocesador ESP32-S, con un modulo de cámara OV2640.
 
 ## 3. Gestión de movilidad
 
 ### Diseño mecánico
-El chasis está construido a partir de perfiles metálicos extruidos en "U" de **TETRIX MAX**, formando una estructura rectangular rígida de dos pisos:
-- **Nivel inferior:** Aloja el tren motriz trasero con eje rígido sobre rodamientos, el motor TorqueNADO central y las manguetas articuladas delanteras.
-- **Nivel superior:** Soporta la tarjeta de control **TETRIX PRIZM**, el paquete de batería NiMH de 12V asegurado en un compartimento trasero y la interfaz de botones de control.
+El chasis está construido a partir de vigas metálicas extruidos en forma de "T" de **TETRIX MAX**, formando una estructura rectangular rígida.
 
 ### Sistema de tracción
-El movimiento del vehículo se realiza mediante tracción en las dos ruedas traseras (RWD). El motor TorqueNADO transmite su rotación directamente a un engranaje central montado sobre el eje posterior continuo de acero. La retroalimentación del encoder integrado en el motor permite implementar un control de velocidad PID en bucle cerrado, permitiendo rampas de aceleración y frenados de precisión.
+El movimiento del vehículo se realiza mediante tracción en las dos ruedas traseras (RWD). El motor TETRIX PRIME DC Motor transmite su rotación directamente a un engranaje central montado sobre el eje posterior continuo de acero. La retroalimentación en el motor permite implementar un control de velocidad en bucle, permitiendo aceleración y frenados con precisión.
 
 ### Sistema de dirección
 El giro se ejecuta mediante un mecanismo de viraje articulado delantero impulsado por un servomotor montado en posición vertical superior. El brazo del servo ajusta mediante una barra de acoplamiento el ángulo de orientación de las manguetas de las ruedas delanteras.
