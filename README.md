@@ -48,14 +48,74 @@ El robot desarrollado para la categoría WRO Futuros Ingenieros 2026  es un veh�
 
 
 > [!IMPORTANT]
-> **Hardware y Componentes**
-> * **Controlador Principal:** [LEGO SPIKE Prime](https://github.com/LEGO/spike-prime-docs)
-> * **Actuadores:** 2x Motores grandes para tracción, 1x Motor mediano para el mecanismo de golpeo
-> * **Sensores:** 1x Giroscopio interno, 2x Sensores de color para detección de bola rosa, 1x sensor de fuerza para los golpes
-
+>**Controlador:** TETRIX PULSE (ATmega328P @ 16 MHz).
+- **Motores:** 
+  - Tracción: TETRIX PRIME DC MOTOR 6V
+  - Dirección: 
+- **Sensores:** 
+  - Sensor ultrasónico frontal de medición continua de distancia.
+  - Cámara ESP-32S CAM para la detección de señales 
+- **Batería:** Batería NiMH TETRIX MAX de 12V DC / 3000 mAh.
+- **Sistema de dirección:** Dirección pivotante accionado por servomotor superior conectado a barra articulada en las manguetas delanteras.
+- **Sistema de tracción:** Tracción trasera (RWD) con transmisión por engranaje cilíndrico central hacia el eje de acero posterior.
+-
 <br>
 
 --- 
+## 3. Gestión de movilidad
+
+### Diseño mecánico
+El chasis está construido a partir de vigas metálicas en forma de "T" de **TETRIX MAX**, formando una estructura rectangular rígida 
+
+### Sistema de tracción
+El movimiento del vehículo se realiza mediante tracción en las dos ruedas traseras. El motor DC de TETRIX PRIME transmite su rotación directamente a un engranaje central montado sobre el eje posterior continuo de acero. La retroalimentación integrado en el motor permite implementar un control de velocidad en bucle cerrado, permitiendo la aceleración y frenados de precisión.
+
+### Sistema de dirección
+El giro se ejecuta mediante un mecanismo de viraje articulado delantero impulsado por un servomotor montado en posición vertical superior. El brazo del servo ajusta mediante una barra de acoplamiento el ángulo de orientación de las ruedas delanteras.
+
+### Decisiones de diseño
+- **Vigas de metal TETRIX MAX:** Proveen alta resistencia a deformaciones e impactos accidentales contra los límites de la pista.
+- **Batería en posición inferios:** Ayuda a la hora de colocar los demás sensores para que no obstruya el espacio.
+- **Servomotor en nivel superior:** Protege la electrónica del mecanismo de dirección contra colisiones frontales.
+
+
+### Sistema de alimentación
+El vehículo cuenta con una fuente de alimentación única de **12V NiMH (3000 mAh)**. La tarjeta **TETRIX PULSE** regula la tensión a 5V para el microcontrolador, los puertos de sensores y el servomotor de dirección. El puente H interno suministra energía modulada por ancho de pulso (PWM) al motor TorqueNADO de tracción.
+
+### Calibración
+- **Sensor Ultrasonico**: Se aplican rutinas de muestreo continuo tomando la mediana de 5 lecturas consecutivas para descartar picos de ruido causados por reflexiones no deseadas.
+- **Cámara ESP-32S CAM:** Probar la detección de colores para realizar una acción.
+
+
+### Detección de obstáculos
+El sensor ultrasónico realiza muestreos frontales continuos. Cuando la distancia medida cae por debajo de 25 cm, el procesador interpreta la presencia de un elemento o muro.
+
+### Algoritmo
+Al detectar un obstáculo con la cámara ESP-32S CAM:
+1. El software reduce la potencia del motor principal para estabilizar la suspensión.
+2. El servomotor de dirección gira al ángulo de compensación predeterminado.
+3. Tras recorrer la distancia medida por el sensor ultrasonico para superar el objeto, el servo regresa a su centro.
+
+### Navegación
+Mantiene una trayectoria recta centrada ajustando el ángulo del servo de dirección en pequeños incrementos a través de las constantes de correcciones del sensor.
+## 6. Software
+
+### Arquitectura del programa
+Desarrollado en C++ mediante el entorno Arduino IDE y la librería oficial `TETRIX_PULSE.h`. Se organiza de manera que:
+- `STATE_WAIT`: Espera el pulso del botón verde de inicio.
+- `STATE_RUN`: Control de avance en pista con lecturas de sensores.
+- `STATE_AVOID`: Corrección de rumbo por esquiva.
+- `STATE_PARK`: Secuencia final de parqueo.
+
+### Estacionamiento
+Al cumplir el conteo total de distancia correspondientes a las tres vueltas reglamentarias, el robot reduce su potencia al 20%, orienta la dirección hacia la zona de parqueo y se detiene cuando el sensor ultrasónico detecta la pared posterior a menos de 10 cm.
+
+## 7. Proceso de ingeniería
+
+### Problemas encontrados y soluciones
+- **Posición de la bateria:** Se cambio el lugar de colocación que teníamos originalmente ya que obstruía el paso de el cable conector del la placa a la computadora.
+- **Ruido en sensor ultrasónico:** Se integró un capacitor de filtrado y un filtro en el firmware.
+- **Uso de llantas** Se cambio el diseño de llantas elegidas originalmente ya que no eran compatibles con el diseño que fabricamos ya que le daba más peso y no se podían colocar, en cambio integramos un diseño de llantas originales de **TETRIX MAX** ya que eran 100% compatibles en todos los aspectos.
 
 ###  Galería de Fotos
 
