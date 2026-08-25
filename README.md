@@ -1,8 +1,10 @@
 # ARCA-WRO
 ARCA, equipo de Futuros Ingenieros del Colegio Científico del Atlántico  
 
-Nombre del equipo: ARCA  
+Nombre del equipo: 
 ---
+ARCA  
+
 
 Institución:
 ---
