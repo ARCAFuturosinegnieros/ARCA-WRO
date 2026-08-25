@@ -23,23 +23,15 @@ Este es el repositorio oficial de [Futuros Ingenieros](https://github.com/open-r
 
 <br>
 
-* **Valerie Artavia Céspedes**
+* **Aaron Brenes López**
   <br>
 
     <div align="left">
-  <img src="https://github.com/gisoddolfato99-jpg/Robosports/blob/dc21c7bda6b01fd8de196f96a23b14380affde4b/feature/WhatsApp%20Image%202026-08-24%20at%203.07.22%20PM.jpeg" width="300" />
+  <img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/c7d249c432e7ef262d8b77408beb4f68d91cb8b5/image.png" width="300" />
 </div>
 
 <br>
 
-* **Maykel Gabriel Francis Hernández**
-  <br>
-  
-    <div align="left">
-  <img src="feature/WhatsApp Image 2026-08-24 at 3.07.22 PM (1).jpeg" width="300" height="400" />
-</div>
-
-<br>
   
 * **Tutora: Elkira Francis Hernández**
   <br>
@@ -51,9 +43,8 @@ Este es el repositorio oficial de [Futuros Ingenieros](https://github.com/open-r
 
 ---
 
-## Descripción de los Robots 🤖
-
-Para construir los robots, utilizamos dos idénticos, pero con una distinta estructura de sensores y diferente programación.
+## Descripción del Robot 🤖
+El robot desarrollado para la categoría WRO Futuros Ingenieros 2026  es un vehículo autónomo basado en la plataforma de construcción robótica de aluminio extruido **TETRIX MAX**. Implementa un sistema de navegación inteligente y control en tiempo real mediante el controlador robótico programable TETRIX PULSE. El diseño incorpora un sistema de dirección servocontrolada montado directamente sobre el eje delantero, transmisión directa de tracción en las ruedas traseras, controlador de distancia ultrasónico de alta precisión en el frontal y retroalimentación óptico integrado para la medición precisa.
 
 
 > [!IMPORTANT]
