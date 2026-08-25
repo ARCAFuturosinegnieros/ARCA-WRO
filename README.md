@@ -6,15 +6,15 @@
 <br>
 
 
-# WRO RoboSports - [Kicktronics] 🎾
+# WRO Futuros Ingenieros - [ARCA]⚙️
 
-Este es el repositorio oficial de [RoboSports](https://github.com/open-robosports) de [KickTronics](https://github.com/gisoddolfato99-jpg/Robosports).
+Este es el repositorio oficial de [Futuros Ingenieros](https://github.com/open-robosports) de [ARCA](https://github.com/gisoddolfato99-jpg/Robosports).
 
 ## Nuestro Equipo
 * **Categoría de Edad:** Senior
 ##  **Integrantes:**
   
-* **Yuming Zhen Wang**
+* **Amanda Guzmán Pérez**
   <br>
   
   <div align="left">
