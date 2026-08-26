@@ -127,8 +127,8 @@ Al cumplir el conteo total de distancia correspondientes a las tres vueltas regl
 
 <br>
 
-<div align="center"><table><tr>Robot de la rampa</tr><tr><td>
-<img src="https://github.com/gisoddolfato99-jpg/Robosports/blob/5d15b8e690788a2a1fb1196902a3e4971874338b/feature/prototipo/1/WhatsApp%20Image%202026-08-24%20at%203.55.55%20PM.jpeg"/></td><td>
+<div align="center"><table><tr>Vista delantera y trasera</tr><tr><td>
+<img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/c9bd1f16435fac034dbdf43c7c610ea48e0f43a6/fotos/image.png"/></td><td>
 <img src="https://github.com/gisoddolfato99-jpg/Robosports/blob/5d15b8e690788a2a1fb1196902a3e4971874338b/feature/prototipo/1/WhatsApp%20Image%202026-08-24%20at%203.55.59%20PM.jpeg"/></td></tr></table></div>
 
 
