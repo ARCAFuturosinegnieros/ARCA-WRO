@@ -157,6 +157,9 @@ Al cumplir el conteo total de distancia correspondientes a las tres vueltas regl
 - Kit de TETRIX MAX PRIME
 - Tener computadora
 
+  **Parte del codigo**
+  (https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/cf92c4f93deefa8121f702aba5a7418c4ff4a4ce/Prueba%20codigo)
+
 
 
 
