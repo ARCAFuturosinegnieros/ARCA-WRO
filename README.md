@@ -4,7 +4,9 @@
 
 ---
 <br>
-https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/eef53eca874cedc442d5f7b7fc7a50f548a6cc3d/fotos/image.png
+<p align="center">
+  <img src="" width="100%">
+</p>
 
 # WRO Futuros Ingenieros - [ARCA]⚙️
 
