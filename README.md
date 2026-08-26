@@ -39,7 +39,7 @@ Este es el repositorio oficial de [Futuros Ingenieros](https://github.com/open-r
   <br>
   
   <div align="left">
-  <img src="https://github.com/gisoddolfato99-jpg/Robosports/blob/7e591b46830c22a55a88fd3e2ce2d9de683d906f/feature/WhatsApp%20Image%202026-08-24%20at%204.52.05%20PM.jpeg" width="300" height="400" />
+  <img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/390537ad35ead2b94e3dd51417955df57b91acca/fotos/image.png" width="300" height="400" />
 </div>
 
 
