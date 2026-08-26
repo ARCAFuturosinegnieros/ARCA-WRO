@@ -129,7 +129,7 @@ Al cumplir el conteo total de distancia correspondientes a las tres vueltas regl
 
 <div align="center"><table><tr>Vista delantera y trasera</tr><tr><td>
 <img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/c9bd1f16435fac034dbdf43c7c610ea48e0f43a6/fotos/image.png"/></td><td>
-<img src="https://github.com/gisoddolfato99-jpg/Robosports/blob/5d15b8e690788a2a1fb1196902a3e4971874338b/feature/prototipo/1/WhatsApp%20Image%202026-08-24%20at%203.55.59%20PM.jpeg"/></td></tr></table></div>
+<img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/33b9ee4ff25c50ddb34202f55c837d1c2d8be736/fotos/image.png"/></td></tr></table></div>
 
 
 
@@ -137,47 +137,25 @@ Al cumplir el conteo total de distancia correspondientes a las tres vueltas regl
 <br>
 
 > [!IMPORTANT]
-> ### 🕹️ Rol es en la Cancha
-> * **Robot 1 (Robot del muro):** Tira las bolas mediante los choques.
+> ### 🕹️ Rol es en la ronda
+> * **El robot según la salida comienza su recurrido según donde determine la ronda, con la cámara podrá leer los colores de las señales donde según lo leído decidira de forma autónoma que camino seguir, luego de completar estas realizara el estacionamiento donde con sus sensores ultrasónicos decidirá como aparcar bien.
 > 
-> * **Robot 2 (Robot de la rampa):** Tira las bolas cuando detecta un colór en específico.
 
-### 💻 Arquitectura del Código
-
-**El robot de la rampa se divide en estas fases:**
-
-1. **Avance:** El robot avanza hasta que la cámara detecta el color de la rampa.
-2. **Tiro:** Cuando el robot está en el color adecuado tira la pelota.
-3. **Bucle:** Luego de tirarla, el robot gira y choca contra el muro para crear un ciclo donde queda dando vueltas y tirando las pelotas.
-
-<br>
-
-**El robot del muro se divide en estas fases:**
-
-1. **Avance:** El robot avanza hasta chocar el muro y tira las bolas.
-2. **Bucle:** Cuando choca, retrocede y gira. Después de hacer este patrón 4 veces, vuelve a tirar la pelota.
-
-<br>
 
 > [!NOTE]
-> El robot frena su recorrido si detecta la bola rosa (en los dos prototipos).
->
-> **Está programado en python/bloques**
+> El robot frena su recorrido y redirecciona si detecta un muro. 
+> **Está programado en c++**
 
 ---
 
 ## 🚀 Instalación y Uso
 
 ### Requisitos Previos
-* Tener Chrome o cualquier navegador compatible con Lego Spike Prime
-* Kit de [Lego Spike](https://github.com/LEGO/spike-prime-docs)
+*Descargar Arduino IDE y las librerias de TETRIX MAX PULSE
+* Kit de TETRIX MAX PRIME
 * Tener computadora
 
-### Códigos de los robots
-> [!NOTE]
-> * https://github.com/gisoddolfato99-jpg/Robosports/blob/7b36257d28c1a814bc8b996cd1c6eea39508d2ac/c%C3%B3digos/Romuro.md
-> 
-> * https://github.com/gisoddolfato99-jpg/Robosports/blob/faf9b45a7bf8a074c2df498f72b86c060638c646/c%C3%B3digos/bich.png
+
 
 
 
