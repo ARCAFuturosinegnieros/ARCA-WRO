@@ -60,7 +60,7 @@ El robot desarrollado para la categoría WRO Futuros Ingenieros 2026  es un veh�
 - **Batería:** Batería NiMH TETRIX MAX de 12V DC / 3000 mAh.
 - **Sistema de dirección:** Dirección pivotante accionado por servomotor superior conectado a barra articulada en las manguetas delanteras.
 - **Sistema de tracción:** Tracción trasera (RWD) con transmisión por engranaje cilíndrico central hacia el eje de acero posterior.
--
+
 <br>
 
 --- 
