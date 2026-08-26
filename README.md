@@ -137,7 +137,7 @@ Al cumplir el conteo total de distancia correspondientes a las tres vueltas regl
 <br>
 
 > [!IMPORTANT]
-> ### 🕹️ Rol es en la ronda
+> ### 🕹️ Rol en la ronda
 > * **El robot según la salida comienza su recurrido según donde determine la ronda, con la cámara podrá leer los colores de las señales donde según lo leído decidira de forma autónoma que camino seguir, luego de completar estas realizara el estacionamiento donde con sus sensores ultrasónicos decidirá como aparcar bien.
 > 
 
