@@ -5,7 +5,7 @@
 ---
 <br>
 <p align="center">
-  <img src="" width="100%">
+  <img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/b08692b9a7337d9d9e4b893bacfc631d8a018c3f/fotos/WhatsApp%20Image%202026-08-25%20at%209.17.16%20PM.jpeg" width="100%">
 </p>
 
 # WRO Futuros Ingenieros - [ARCA]⚙️
