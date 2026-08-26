@@ -123,7 +123,7 @@ Al cumplir el conteo total de distancia correspondientes a las tres vueltas regl
 
 <div align="center"><table><tr>Vista superior</tr><tr><td>
 <img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/2c364574de68fa2e31664add8f51146796cb31ef/fotos/image.png"/></td><td>
-<img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/tree/4e1e04dc913c21f20132559b2cde1057c76feffe/fotos"/></td></tr></table></div>
+<img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/888fe7e2e05cbb53ec6cf26e7ded6f8d583ed459/fotos/image.png"/></td></tr></table></div>
 
 <br>
 
