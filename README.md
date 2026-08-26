@@ -122,7 +122,7 @@ Al cumplir el conteo total de distancia correspondientes a las tres vueltas regl
 <br>
 
 <div align="center"><table><tr>Robot del muro</tr><tr><td>
-<img src="https://github.com/gisoddolfato99-jpg/Robosports/blob/fb2c760a20bfd880a7ba884b4ba6023ceec8b445/feature/prototipo/1/WhatsApp%20Image%202026-08-24%20at%203.55.47%20PM.jpeg"/></td><td>
+<img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/tree/4e1e04dc913c21f20132559b2cde1057c76feffe/fotos"/></td><td>
 <img src="https://github.com/gisoddolfato99-jpg/Robosports/blob/fb2c760a20bfd880a7ba884b4ba6023ceec8b445/feature/prototipo/1/1a.jpeg"/></td></tr></table></div>
 
 <br>
