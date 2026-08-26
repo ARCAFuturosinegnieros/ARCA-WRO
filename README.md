@@ -27,7 +27,7 @@ Este es el repositorio oficial de [Futuros Ingenieros](https://github.com/open-r
   <br>
 
     <div align="left">
-  <img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/c7d249c432e7ef262d8b77408beb4f68d91cb8b5/image.png" width="300" />
+  <img src="https://github.com/ARCAFuturosinegnieros/ARCA-WRO/blob/eef53eca874cedc442d5f7b7fc7a50f548a6cc3d/fotos/image.png" />
 </div>
 
 <br>
