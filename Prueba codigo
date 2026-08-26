@@ -1,1 +1,84 @@
+#include <PULSE.h>
+#include <SoftwareSerial.h>
 
+PULSE pulse;
+
+// D3 de PULSE: pines Arduino 10 y 3.
+// ESP32-CAM TX -> PULSE D3 pin digital RX (10), con conversor de nivel 3.3 V.
+// GND de ambos controladores debe estar conectado.
+SoftwareSerial camSerial(10, 3); // RX, TX
+
+const byte PUERTO_ULTRASONICO = 2;
+const byte SERVO_DIRECCION = 1;
+
+// Ajustar en pruebas según el montaje mecánico.
+const int DIR_IZQUIERDA = 55;
+const int DIR_CENTRO    = 90;
+const int DIR_DERECHA   = 125;
+
+const int VELOCIDAD_NORMAL = 55;
+const int VELOCIDAD_GIRO   = 38;
+const int DISTANCIA_FRENO  = 30;  // cm
+const int DISTANCIA_CRITICA = 18; // cm
+
+enum Estado {
+  ESPERANDO,
+  BUSCAR_COLOR,
+  CONDUCIR,
+  ESQUIVAR,
+  PARQUEAR,
+  TERMINADO
+};
+
+Estado estado = ESPERANDO;
+
+char colorCarril = 'N'; // R = derecho, G = izquierdo
+int vueltas = 0;
+unsigned long inicioEsquive = 0;
+bool giroDerechaEsquive = true;
+
+void detener() {
+  pulse.setMotorPowers(0, 0);
+}
+
+void avanzar(int potencia) {
+  // Si el robot retrocede, invertir uno o ambos motores aquí.
+  pulse.setMotorPowers(potencia, potencia);
+}
+
+void retroceder(int potencia) {
+  pulse.setMotorPowers(-potencia, -potencia);
+}
+
+void direccion(int posicion) {
+  pulse.setServoPosition(SERVO_DIRECCION, posicion);
+}
+
+void recibirCamara() {
+  while (camSerial.available()) {
+    char dato = camSerial.read();
+
+    if (dato == 'R' || dato == 'G') {
+      colorCarril = dato;
+    }
+
+    if (dato == 'B' && estado == CONDUCIR) {
+      vueltas++;
+
+      if (vueltas >= 3) {
+        estado = PARQUEAR;
+      }
+    }
+
+    if (dato == 'P') {
+      estado = PARQUEAR;
+    }
+  }
+}
+
+void iniciarEsquive() {
+  detener();
+  delay(150);
+  retroceder(35);
+  delay(350);
+  detener();
